@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Play Me</title>
+
+	<style>
+		body {
+			background: #000;
+		}
+		.lines {
+			height: 20px;
+			width: 5px;
+			display: block;
+			background: red;
+			margin-bottom: 2px;
+		}
+
+		#face {
+			zoom: 5;
+			width: 204px;
+			margin: 0 auto;
+
+		}
+
+		#face1, #face5 {
+			/*-webkit-transition:background-position 1s linear;*/
+			background: url('faces/images/faces_01.png') 0 0;
+			margin: 0 auto;
+			float: left;
+		}
+
+		#face2, #face6 {
+			/*-webkit-transition:background-position 1s linear;*/
+			background: url('faces/images/faces_02.png') 0 0;
+			margin: 0 auto;
+			float: left;
+		}
+
+		#face3, #face7 {
+			/*-webkit-transition:background-position 1s linear;*/
+			background: url('faces/images/faces_03.png') 0 0;
+			margin: 0 auto;
+			float: left;
+		}
+
+		#face4, #face8 {
+			/*-webkit-transition:background-position 1s linear;*/
+			background: url('faces/images/faces_04.png') 0 0;
+			margin: 0 auto;
+			float: left;
+		}
+		.clear {
+			float: none;
+			clear: both;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="chords" style="color: white;"></div>
+	<div id="face">
+		<div class="face" id="face1" style="width: 100px; height: 79px; " ></div>
+		<div class="face" id="face5" style="width: 100px; height: 79px; " ></div>
+		<div class="clear"></div>
+		<div class="face" id="face2" style="width: 100px; height: 35px; "></div>
+		<div class="face" id="face6" style="width: 100px; height: 35px; "></div>
+		<div class="clear"></div>
+		<div class="face" id="face3" style="width: 100px; height: 24px; "></div>
+		<div class="face" id="face7" style="width: 100px; height: 24px; "></div>
+		<div class="clear"></div>
+		<div class="face" id="face4" style="width: 100px; height: 56px; "></div>
+		<div class="face" id="face8" style="width: 100px; height: 56px; "></div>
+	</div>
+	<script src="node_modules/jquery/dist/jquery.js" type="text/javascript"></script>
+	<script src="index.js" type="text/javascript"></script>
+</body>
+</html>
