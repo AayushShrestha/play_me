@@ -132,12 +132,12 @@ setInterval(function() {
 	for(var k = 0; k < reducedNotes.length; k++) {
 		var difference = reducedNotes[k] - currentNotes[k];
 
-		if(difference > 5 || Math.abs(difference) > 150) {
+		if(difference > 5 || Math.abs(difference) > 100) {
 			currentNotes[k] = reducedNotes[k];
 			if(k > 3) {
-				$('#face'+(k+1)).css({backgroundPosition: (currentNotes[k]%12*204 + 102) + 'px 0'})
+				$('#face'+(k+1)).css({backgroundPosition: (currentNotes[k]%12*600 + 300) + 'px 0'})
 			} else {
-				$('#face'+(k+1)).css({backgroundPosition: currentNotes[k]%12*204 + 'px 0'})
+				$('#face'+(k+1)).css({backgroundPosition: currentNotes[k]%12*600 + 'px 0'})
 			}
 
 		}
@@ -242,7 +242,7 @@ function show() {
 		reducedNotes = new Array(0,0,0,0,0,0,0,0,0,0,0,0);
 		for(var j = 0; j < notes.length; j++) {
 			var index = j % 12;
-			reducedNotes[index] += (notes[j].power>100) ? parseInt(notes[j].power) : 0;
+			reducedNotes[index] += (notes[j].power>50) ? parseInt(notes[j].power) : 0;
 		}
 
 		// document.getElementById('arrays').innerHTML = reducedNotes.join('<br />');
